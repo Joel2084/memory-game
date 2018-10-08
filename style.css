@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.deck {
+  list-style: none;
+  /* background-color: aqua; */
+  background: linear-gradient(180deg, aqua, fuchsia);
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 20px 20px 20px 5px
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 5px;
+  text-align: center;
+  font-size: 0;
+  float: left;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-top: 1em;
+}
+
+.flip {
+  cursor: default;
+  background-color: yellow;
+  font-size: 2em;
+}
+
+.match {
+  cursor: default;
+  background-color: rgb(45, 230, 0);
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?aaryiv');
+  src:  url('fonts/icomoon.eot?aaryiv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?aaryiv') format('truetype'),
+    url('fonts/icomoon.woff?aaryiv') format('woff'),
+    url('fonts/icomoon.svg?aaryiv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-terminal:before {
+  content: "\ea81";
+}
+.icon-google:before {
+  content: "\ea88";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-reddit:before {
+  content: "\eac6";
+}
